@@ -1,0 +1,121 @@
+{% assign sum = site.posts | size %}
+
+<nav class="nav__list">
+  <input id="ac-toc" name="accordion-toc" type="checkbox" />
+  <label for="ac-toc">{{ site.data.ui-text[site.locale].menu_label }}</label>
+  <ul class="nav__items" id="category_tag_menu">
+
+      <li>
+        📂ALL ({{sum}})
+      </li>
+        ━━━━━━━━
+      <li>     
+
+        Mathematics
+            <ul>
+                {% for X in site.categories %}
+                    {% if X[0] == "machine_learning" %}
+                        <li><a href="/categories/machine_learning">├ 기계 학습 ({{X[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for X in site.categories %}
+                    {% if X[0] == "linear_algebra" %}
+                        <li><a href="/categories/linear_algebra">├ 선형대수학({{X[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for X in site.categories %}
+                    {% if X[0] == "statistics" %}
+                        <li><a href="/categories/statistics">├ 통계 ({{X[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for X in site.categories %}
+                    {% if X[0] == "graph_theory" %}
+                        <li><a href="/categories/graph_theory">└ 그래프 이론({{X[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            
+        Python
+            <ul>
+                {% for X in site.categories %}
+                    {% if X[0] == "python_built-in" %}
+                        <li><a href="/categories/python_built-in">├ Python Built-In ({{X[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for X in site.categories %}
+                    {% if X[0] == "numpy" %}
+                        <li><a href="/categories/numpy">├ Numpy ({{X[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for X in site.categories %}
+                    {% if X[0] == "pandas" %}
+                        <li><a href="/categories/pandas">├ Pandas({{X[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for X in site.categories %}
+                    {% if X[0] == "sklearn" %}
+                        <li><a href="/categories/sklearn">├ Sklearn ({{X[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for X in site.categories %}
+                    {% if X[0] == "matplotlib %}
+                        <li><a href="/categories/matplotlib">├ Matplotlib ({{X[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for X in site.categories %}
+                    {% if X[0] == "seaborn" %}
+                        <li><a href="/categories/seaborn">└ Seaborn ({{X[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            
+        E.T.C.
+            <ul>
+                {% for X in site.categories %}
+                    {% if X[0] == "git" %}
+                        <li><a href="/categories/git">├ Git ({{X[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>        
+            <ul>
+                {% for X in site.categories %}
+                    {% if X[0] == "database" %}
+                        <li><a href="/categories/database">├ 데이터베이스(sql) ({{X[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for X in site.categories %}
+                    {% if X[0] == "project" %}
+                        <li><a href="/categories/project">├ 프로젝트 ({{X[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for X in site.categories %}
+                    {% if X[0] == "essay" %}
+                        <li><a href="/categories/essay">└ 회고 ({{X[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+                        
+      </li>
+      
+  </ul>
+</nav>
