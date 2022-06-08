@@ -72,7 +72,7 @@
             </ul>
             <ul>
                 {% for X in site.categories %}
-                    {% if X[0] == "matplotlib %}
+                    {% if X[0] == "matplotlib" %}
                         <li><a href="/categories/matplotlib">├ Matplotlib ({{X[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
