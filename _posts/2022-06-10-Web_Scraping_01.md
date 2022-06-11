@@ -188,4 +188,8 @@ html문으로 구성된 결과물에서 같은 형태의 블럭이 반복된다�
 (다만 여기서 주의점은 평가의 경우 \<span>\</span> 안쪽에 작성된 문자가 아닐 가능성도 있다는 점이다. 그래도 이는 후에 데이터 리턴값을 직접 보면서 조정하는게 가능하니 지금은 적당히 넘겨도 좋다고 생각한다.)  
    
 이제 남은 과정은 서로 다른 리뷰 페이지들의 주소를 알기만 하면 된다.  
-이는 이후에 있을 수집코드 작성에서 찾기로 하자
+
+2 페이지의 주소 : https://movie.naver.com/movie/point/af/list.naver?st=nickname&sword=48747&page=2  
+3 페이지의 주소 : https://movie.naver.com/movie/point/af/list.naver?st=nickname&sword=48747&page=3  
+
+주소 마지막의 &page=? 인것이 명백하다.
